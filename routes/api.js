@@ -6,7 +6,7 @@ const { spawn } = require('child_process');
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 
 router.get('/kodi', function(req, res, next) {
-    const open = spawn('C:\Program Files\Kodi\kodi.exe');
+    const open = spawn('C:\\Program Files\\Kodi\\kodi.exe');
     res.send('ok');
     /*axios.post('http://localhost:8080/jsonrpc', {
         "jsonrpc": "2.0", 
@@ -25,7 +25,7 @@ router.get('/kodi', function(req, res, next) {
 });
 
 router.get('/netflix', function(req, res, next) {
-    const open = spawn('c:\windows\explorer.exe', ['shell:appsFolder\4DF9E0F8.Netflix_mcm4njqhnhss8!Netflix.App']);
+    const open = spawn('c:\\windows\\explorer.exe', ['shell:appsFolder\\4DF9E0F8.Netflix_mcm4njqhnhss8!Netflix.App']);
     res.send('ok');
 });
 
