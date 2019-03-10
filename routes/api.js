@@ -29,6 +29,11 @@ router.get('/netflix', function(req, res, next) {
     res.send('ok');
 });
 
+router.get('/setaudio', function(req, res, next) {
+    const open = spawn('C:\\Users\\Mark\\SetAudio.exe');
+    res.send('ok');
+});
+
 /*router.get('/basementkodi/tvshows/:showName', function(req, res, next) {
     const showName = req.params.showName;
     axios.post('http://localhost:8080/jsonrpc', {
